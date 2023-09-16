@@ -1,0 +1,15 @@
+.footer a {
+  text-align: center;
+  font-style: italic;
+  color: #3d3d3d;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.footer a:hover {
+  opacity: 0.6;
+}
+
+.footer div.content-section.text-center {
+  text-align: center;
+}

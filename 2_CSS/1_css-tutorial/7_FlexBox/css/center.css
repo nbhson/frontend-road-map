@@ -1,0 +1,11 @@
+.center-layout {
+  margin: 36px auto;
+  padding: 16px;
+  background: #3ae374;
+  width: 640px;
+  height: 360px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

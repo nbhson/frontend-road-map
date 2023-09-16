@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="IE=edge"
+    >
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    >
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <div>
+      <button
+        onclick="toast('Success', 'Created user successfully!', 'success', 'fa-check-circle', 3000)"
+        class="btn btn--success"
+      >
+        Show Success!
+      </button>
+      <button
+        onclick="toast('Error', 'Create user fail!', 'error', 'fa-exclamation-circle', 3000)"
+        class="btn btn--danger"
+      >
+        Show Error!
+      </button>
+    </div>
+
+    <div id="toast"></div>
+
+    <script>
+      function toast(title, message, type, icon, duration) {
+          const main = document.getElementById('toast')
+
+					if (main) {
+						const delay = (duration / 1000)
+
+						const toast = document.createElement('div')
+
+						// auto remove
+						const autoRemove = setTimeout(() => {
+							main.removeChild(toast)	
+						}, duration + 1000);
+
+						// click remove
+						toast.onclick = e => {
+							// tim xem chinh ban than no co class do hay khong
+							if (e.target.closest('.toast__close')) {
+								main.removeChild(toast)
+								clearTimeout(autoRemove)
+							}
+						}
+
+						toast.classList.add('toast', `toast--${type}`)
+						toast.style.animation = `slideInLeft ease 0.3s, fadeOut linear 1s ${delay}s forwards`
+						toast.innerHTML = `
+							<div class="toast__icon">
+								<i class="fas ${icon}"></i>
+							</div>
+							<div class="toast__body">
+								<div class="toast__title">${title}</div>
+								<div class="toast__msg">${message}</div>
+							</div>
+							<div class="toast__close">
+								<i class="fas fa-times"></i>
+							</div>
+						`
+							main.appendChild(toast)
+
+							
+					}
+			}
+    </script>
+
+  </body>
+</html>

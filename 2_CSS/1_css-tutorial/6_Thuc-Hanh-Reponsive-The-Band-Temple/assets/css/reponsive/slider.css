@@ -1,0 +1,9 @@
+@media (max-width: 46.1875em) {
+  .slider .text-content {
+    bottom: 0px;
+  }
+  .slider .text-content {
+    padding: 0 4px;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,20 @@
+@media (max-width: 64em) {
+  .contact .contact-form .form-control {
+    padding: 15px;
+  }
+  .contact .contact-info {
+    line-height: 2;
+  }
+}
+
+@media (min-width: 46.25em) and (max-width: 64em) {
+  .contact-info {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 46.1875em) {
+  .contact-info {
+    margin-bottom: 32px;
+  }
+}

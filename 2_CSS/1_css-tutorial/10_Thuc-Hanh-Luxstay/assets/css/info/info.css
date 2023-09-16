@@ -1,0 +1,81 @@
+.info {
+}
+.info__logo {
+  width: 170px;
+  height: 35px;
+  margin-bottom: 24px;
+}
+.info__contact {
+  display: flex;
+  margin-bottom: 16px;
+}
+.info__logo-img {
+  width: 40px;
+  height: 30px;
+}
+.info__contact-icon {
+}
+.info__contact-mess,
+.info__contact-call {
+  margin-left: 8px;
+}
+.info__contact-title {
+  font-size: 14px;
+  color: var(--black-color);
+  line-height: 16px;
+  font-weight: 600;
+}
+.info__contact-content {
+  font-size: 12px;
+  color: var(--header-color);
+  cursor: pointer;
+  display: block;
+  text-decoration: none;
+  line-height: 16px;
+  transition: all 0.3s ease;
+}
+.info__contact-content:hover {
+  color: var(--primary-color);
+}
+
+.info__title {
+  font-size: 14px;
+  color: var(--header-color);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.info__title-list {
+  list-style: none;
+}
+.info__title-item {
+  color: var(--header-color);
+  font-size: 14px;
+  margin-bottom: 12px;
+  font-weight: 100;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.info__title-item:hover {
+  color: var(--primary-color);
+}
+.info__download-detail {
+  display: flex;
+  justify-content: space-between;
+}
+.info__download-qr {
+  width: 65px;
+  height: 65px;
+  padding: 12px;
+  border: 1px solid #e8e8e8;
+}
+.info__download-qr-img {
+  width: 100%;
+  height: 100%;
+}
+.info__download-apple,
+.info__download-huawei,
+.info__download-google {
+  width: 103px;
+  height: 32px;
+}

@@ -1,0 +1,124 @@
+/* NOTIFICATION */
+.header__notify {
+  position: absolute;
+  top: 150%;
+  width: 404px;
+  right: 0;
+  background: var(--white-color);
+  border: 1px solid #d3d3d3;
+  cursor: default;
+  /* cursor: text; */
+  /* khong cho select */
+  /* user-select: none; */
+
+  /* dinh nghia cai tam cua tranform */
+  /* calc tinh toan chieu with co thay doi thi tam van nam o do */
+  transform-origin: calc(100% - 20px) top;
+  /* Toi uu chuyen dong - noi cho trinh duyet biet doi tuong nay co su thay doi */
+  will-change: opacity, transform;
+  /* cho nay co the search: how to use prefix (tiep dau ngu) */
+  animation: headerNotifyGrowth .2s ease-in-out;
+  display: none;
+  border-radius: 2px;
+  z-index: 1;
+}
+
+.header__notify::before {
+  content: "";
+  border-width: 20px 30px;
+  border-style: solid;
+  border-color: transparent transparent var(--white-color)  transparent;
+  position: absolute;
+  top: -30px;
+  right: 4px;
+}
+
+.header__notify::after { 
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  top: -20px;
+  width: 90px;
+  height: 20px;
+}
+
+@keyframes headerNotifyGrowth {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.header__notify-header {
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+}
+.header__notify-header h3 {
+  color: #999;
+  margin: 0 0 0 12px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+.header__notify-list {
+  padding-left: 0;
+  list-style: none;
+}
+.header__notify-item {
+}
+.header__notify-link {
+  display: flex;
+  padding: 12px;
+  text-decoration: none;
+}
+.header__notify-link:hover {
+  background: #f7f7f7f7;
+}
+.header__notify-item--viewed {
+  background: rgba(238, 77, 45, 0.1);
+}
+.header__notify-img {
+  width: 80px;
+  height: 40px;
+  object-fit: contain;
+}
+.header__notify-info {
+  flex: 1;
+  margin-left: 12px;
+}
+.header__notify-name {
+  display: block;
+  font-size: 1.4rem;
+  color: var(--black-color);
+  font-weight: 500;
+}
+.header__notify-discription {
+  display: block;
+  font-size: 1.2rem;
+  color: #756f6e;
+}
+.header__notify-footer {
+  height: 40px;
+  font-size: 1.4rem;
+  font-weight: 400;
+
+  /* tu dong cang giua neu khong dung flex */
+  /* margin: auto; */
+}
+.header__notify-footer-btn {
+  text-decoration: none;
+  color: #999;
+  display: block;
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

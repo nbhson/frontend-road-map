@@ -1,0 +1,32 @@
+.introduce {
+  display: flex;
+  justify-content: center;
+}
+.introduce__content {
+}
+.introduce__title {
+  display: block;
+  width: 100%;
+  font-size: 28px;
+  color: var(--header-color);
+  margin-bottom: 32px;
+}
+.introduce__text-intro {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.introduce__text-auth {
+  display: block;
+  width: 100%;
+  font-size: 16px;
+}
+.introduce__text-auth a{
+    color: var(--header-color);
+    transition: color var(--primary-transition-time);
+}
+.introduce__text-auth a:hover {
+    color: var(--primary-color);
+    font-weight: 500;
+}

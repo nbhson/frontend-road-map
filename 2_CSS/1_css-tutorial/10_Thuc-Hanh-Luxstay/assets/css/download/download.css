@@ -1,0 +1,52 @@
+.download {
+  height: 600px;
+}
+.download__logo {
+  width: 343px;
+  height: 70px;
+  margin-bottom: 18px;
+}
+.download__title {
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+.download__dis {
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: 24px;
+  color: var(--header-color);
+}
+
+.download__app-detail {
+  margin-top: 72px;
+}
+.download__qr {
+  height: 180px;
+  width: 180px;
+  padding: 12px;
+  border: 1px solid #e8e8e8;
+  margin-right: 32px;
+}
+.download__container {
+  padding: 0 16px;
+}
+img.download__qr-detail {
+  width: 100%;
+}
+.download__app {
+  height: 180px;
+  display: flex;
+  align-items: center;
+}
+.download__app-apple,
+.download__app-huawei,
+.download__app-google {
+  width: 182px;
+  height: 56px;
+  margin-bottom: 8px;
+}
+.home__logo-2 {
+  width: 100%;
+  height: 100%;
+}

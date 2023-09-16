@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box-1 {
+  margin-bottom: 1em;
+  width: 100vw;
+  height: 250px;
+  background: rgb(100, 200, 100);
+}
+
+.box-2 {
+  margin-bottom: 1em;
+  width: 100vw;
+  height: 250px;
+  background: rgba(255, 0, 0, 0.3);
+}
+
+.box-3 {
+  margin-bottom: 1em;
+  width: calc(250px * 1 - 50px / 2 + 25px);
+  height: 250px;
+  background: rgba(255, 0, 0, 0.3);
+}
+
+.box-4 {
+  margin-bottom: 1em;
+  width: 250px;
+  height: 250px;
+  background: rgba(148, 91, 91, 1);
+}
+
+a::after {
+  /* sử dụng attr để lấy thuộc tính bên trong thẻ */
+  content: attr(href);
+}
+
+.box-4::after {
+  content: attr(data-title);
+}
+
+.box-5 {
+  margin-bottom: 1em;
+  width: 250px;
+  height: 250px;
+  background-image: linear-gradient(to right, red, yellow);
+}

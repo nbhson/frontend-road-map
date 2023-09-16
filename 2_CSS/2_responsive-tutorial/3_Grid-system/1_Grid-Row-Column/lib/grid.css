@@ -1,0 +1,28 @@
+/* GRID CHIẾM HẾT LUÔN CHIỀU NGANG */
+.grid {
+    width: 100%;
+    display: block; /* xài cho những thẻ không có tính chất block thì khi xài grid này nó vẫn chiếm đủ 100% chiều ngang*/
+    padding: 0; /* tránh ảnh hưởng đến kích thước grid sau này*/
+}
+
+/* WIDE CHỈ DÙNG CHO GRID */
+.grid.wide {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+/* Tablet - PC low resolution */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wide {
+        width: 644px;
+    }
+}
+
+/* PC LOW RESOLUTION */
+@media screen and (min-width: 1024px) and (max-width: 1239px) {
+    .wide {
+        width: 984px;
+    }
+}

@@ -1,0 +1,29 @@
+.contact .contact-info {
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+/* Chấp nhận tất cả các class có "fas"*/
+.contact .contact-info i[class*="fas"] {
+  text-align: center;
+  width: 30px;
+}
+
+.contact .contact-form {
+  font-size: 15px;
+}
+
+.contact .contact-form .form-control {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 100%;
+  outline: none;
+}
+
+.contact .contact-form .btn-submit {
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  float: right;
+  margin-top: 0px;
+}

@@ -1,0 +1,21 @@
+@media (min-width: 46.25em) and (max-width: 64em) {
+  .content-section,
+  .tour .content-section {
+    padding: 64px 16px;
+  }
+}
+
+@media (max-width: 46.1875em) {
+  .content-section,
+  .tour .content-section {
+    padding: 64px 16px;
+  }
+
+  .content-section .list-member p {
+    margin: 32px 0 13px 0;
+  }
+
+  .content-section .list-member img {
+    width: 60%;
+}
+}

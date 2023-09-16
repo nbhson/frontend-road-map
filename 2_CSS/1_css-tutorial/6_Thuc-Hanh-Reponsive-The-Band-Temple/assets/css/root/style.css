@@ -1,0 +1,87 @@
+:root {
+  --text-white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* 
+        nếu 2 font đầu không tìm thấy 
+        thì nó sẽ lấy font không chân ngẫu nhiên ngẫu nhiên
+    */
+  font-family: Helvetica, Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+#app {
+  overflow: hidden;
+}
+
+/* Common */
+
+.row {
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.col {
+  float: left;
+  padding: 0 8px;
+}
+
+.col-3 {
+  width: calc(100% / 3);
+}
+
+.col-2 {
+  width: calc(100% / 2);
+}
+ 
+.col-1 {
+  width: calc(100% / 1);
+}
+
+.mt-8 {
+  margin-top: 8px;
+}
+
+.mt-16 {
+  margin-top: 16px;
+}
+
+.clear {
+  clear: both;
+}
+
+.row::after {
+  content: "";
+  /* phải sử dụng display */
+  display: block;
+  clear: both;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  font-size: 15px;
+  margin-top: 15px;
+  display: inline-block;
+  color: #fff;
+  background: #000;
+  padding: 12px 18px;
+  text-decoration: none;
+  text-align: center;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.btn:hover {
+  color: #000;
+  background: #ccc;
+}

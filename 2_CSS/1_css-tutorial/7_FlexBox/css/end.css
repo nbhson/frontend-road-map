@@ -1,0 +1,41 @@
+.the-end {
+  margin: 36px auto;
+  padding: 16px;
+  background: #fff;
+  max-width: 740px;
+  min-height: 360px;
+
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.the-end-first {
+  background: #ff9f1a;
+
+  flex: 1;
+}
+
+.the-end-second {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  /* flex-direction: column-reverse; */
+}
+
+.the-end-second-one {
+  background: #3ae374;
+
+  flex: 1;
+}
+
+.the-end-second-two {
+  background: #c56cf0;
+  color: #fff;
+
+  flex: 1;
+}
+.the-end-first p,
+.the-end-second-one p,
+.the-end-second-two p {
+  padding: 8px;
+}

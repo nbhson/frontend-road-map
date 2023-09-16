@@ -1,0 +1,12 @@
+:root {
+    --red-color: red;
+}
+
+h1 {
+    color: var(--red-color)
+}
+
+h2 {
+    --green-color: green;
+    color: var(--green-color)
+}

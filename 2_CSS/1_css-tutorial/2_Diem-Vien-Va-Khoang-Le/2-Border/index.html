@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box-1 {
+            color: white;
+            background: #f00;
+        }
+        .box-2 {
+            color: darkgray;
+            background: yellow;
+        }
+        .box-3 {
+            color: #fff;
+            background: darkgreen;
+            /* 
+                1 param: top right bottom left
+                2 param: top bottom - left right
+                3 param: top - left right - bottom
+                4 param: top - right - bottom - left
+             */
+            padding: 10px 5px 7px 10px;
+            border: 10px solid #ccc;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="box box-1">Box 1</div>
+    <div class="box box-2">Box 2</div>
+    <div class="box box-3">Box 3</div>
+</body>
+</html>

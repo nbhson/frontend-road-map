@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Đặt phòng homestay nhanh chóng, tiện lợi</title>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="./assets/css/base.css">
+	<link rel="stylesheet" href="./assets/css/navbar/navbar.css">
+	<link rel="stylesheet" href="./assets/css/slide/slide.css">
+	<link rel="stylesheet" href="./assets/css/introduce/introduce.css">
+	<link rel="stylesheet" href="./assets/css/service/service.css">
+	<link rel="stylesheet" href="./assets/css/hightlight/hightlight.css">
+	<link rel="stylesheet" href="./assets/css/endow/endow.css">
+	<link rel="stylesheet" href="./assets/css/suggest/suggest.css">
+	<link rel="stylesheet" href="./assets/css/discover/discover.css">
+	<link rel="stylesheet" href="./assets/css/tutorial/tutorial.css">
+	<link rel="stylesheet" href="./assets/css/download/download.css">
+	<link rel="stylesheet" href="./assets/css/info/info.css">
+	<link rel="stylesheet" href="./assets/css/footer/footer.css">
+	<link rel="icon" href="./assets/img/logo/logo.png">
+</head>
+
+<body>
+	<!-- NAVBAR -->
+	<nav class="navbar">
+		<div class="navbar__content grid__navbar">
+			<div class="navbar__search column-6">
+				<a href class="navbar__search-link">
+					<svg viewBox="0 0 50px" class="navbar__search-logo" style="width: 50px; height: 50px">
+						<path pid="0"
+							d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67z">
+						</path>
+					</svg>
+				</a>
+
+				<div class="navbar__search-input">
+					<div class="navbar__search-input--1">
+						<i class="fas fa-search navbar__search-input--1-icon"></i>
+						<input type="text" class="navbar__search-input--1-text" placeholder="Tìm kiếm">
+					</div>
+
+					<div class="navbar__search-input--2">
+						<i class="far fa-calendar navbar__search-input--2-icon"></i>
+						<input type="button" class="navbar__search-input--2-date" value="Ngày">
+						<div class="navbar__search-input--2-option">
+							<img src="./assets/img/scheule.png" class="navbar__search-input--2-schedule"></img>
+							<div class="row navbar__search-input--2-option--footer">
+								<div class="navbar__search-input--2-option--delete">Xóa</div>
+								<div class="navbar__search-input--2-option--apply">Áp dụng</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="navbar__search-input--3">
+						<i class="fas fa-user navbar__search-input--3-icon"></i>
+						<input type="button" class="navbar__search-input--3-number" value="Số khách">
+						<div class="navbar__search-input--3-option">
+							<div class="row navbar__search-input--3-option--list">
+								<div class="navbar__search-input--3-item-text">
+									<span class="navbar__search-input--3-item-title">Người lớn</span>
+								</div>
+								<div class="navbar__search-input--3-item-function">
+									<input type="button" value="-" class="navbar__search-input--3-option-item-tru">
+									<div class="navbar__search-input--3-option-item-number">0</div>
+									<input type="button" value="+" class="navbar__search-input--3-option-item-cong">
+								</div>
+
+							</div>
+							<div class="row navbar__search-input--3-option--list mt-18">
+								<div class="navbar__search-input--3-item-text">
+									<div class="navbar__search-input--3-item-title">Trẻ em</div>
+									<div class="navbar__search-input--3-item-subtitle">Tuổi từ 2 - 12</div>
+								</div>
+								<div class="navbar__search-input--3-item-function">
+
+									<input type="button" value="-" class="navbar__search-input--3-option-item-tru">
+									<div class="navbar__search-input--3-option-item-number">0</div>
+									<input type="button" value="+" class="navbar__search-input--3-option-item-cong">
+								</div>
+							</div>
+							<div class="row navbar__search-input--3-option--list mt-18">
+								<div class="navbar__search-input--3-item-text">
+									<div class="navbar__search-input--3-item-title">Trẻ sơ sinh</div>
+									<div class="navbar__search-input--3-item-subtitle">Dưới 2 tuổi</div>
+								</div>
+								<div class="navbar__search-input--3-item-function">
+
+									<input type="button" value="-" class="navbar__search-input--3-option-item-tru">
+									<div class="navbar__search-input--3-option-item-number">0</div>
+									<input type="button" value="+" class="navbar__search-input--3-option-item-cong">
+								</div>
+							</div>
+							<div class="row navbar__search-input--3-option--footer">
+								<div class="navbar__search-input--3-option--delete">Xóa</div>
+								<div class="navbar__search-input--3-option--apply">Áp dụng</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="navbar__search-input--icon">
+						<i class="fas fa-search"></i>
+					</div>
+				</div>
+			</div>
+			<!-- END SEARCH -->
+
+			<!-- FUNCTION -->
+			<div class="navbar__function column-6">
+				<ul class="navbar__function-list">
+					<li class="navbar__function--item">
+						<span class="navbar__function--item-notify"></span>
+						Host
+					</li>
+					<li class="navbar__function--item">Đăng ký</li>
+					<li class="navbar__function--item">Đăng nhập</li>
+				</ul>
+				<div class="navbar__function-language">
+					<img src="./assets/img/logo/vi.svg" width="24" height="24">
+					<div class="navbar__function-language--text">VND</div>
+					<i class="fas fa-sort-down navbar__function-language--option-icon"></i>
+
+					<div class="navbar__function-language--option">
+						<div class="row">
+							<div class="column-6">
+								<ul class="navbar__function-language--option-1">
+									<li class="navbar__function-language--item">
+										<img src="./assets/img/logo/vi.svg" alt
+											class="navbar__function-language--item-icon">
+										<span class="navbar__function-language--item-country">Tiếng Việt</span>
+										<i class="fas fa-check"></i>
+									</li>
+									<li class="navbar__function-language--item">
+										<img src="./assets/img/logo/en.svg" alt
+											class="navbar__function-language--item-icon">
+										<span class="navbar__function-language--item-country">English</span>
+									</li>
+									<li class="navbar__function-language--item">
+										<img src="./assets/img/logo/ko.svg" alt
+											class="navbar__function-language--item-icon">
+										<span class="navbar__function-language--item-country">Korean</span>
+									</li>
+								</ul>
+							</div>
+							<div class="column-6">
+								<ul class="navbar__function-language--option-2">
+									<li class="navbar__function-language--item">
+										<span class="navbar__function-language--item-unit">VND</span>
+										<span class="navbar__function-language--item-country">Việt Nam Đồng</span>
+										<i class="fas fa-check"></i>
+									</li>
+									<li class="navbar__function-language--item">
+										<span class="navbar__function-language--item-unit">USD</span>
+										<span class="navbar__function-language--item-country">United States
+											Dollar</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- END FUNCTION -->
+		</div>
+	</nav>
+	<!-- END NAVBAR -->
+
+	<!-- SLIDE -->
+	<div class="slide">
+		<div class="grid">
+			<div class="row">
+				<div class="column-12">
+					<img src="./assets/img/slide/slide_1.png" alt="" class="slide__img" id="slide__img">
+					<div class="slide__choose-option">
+						<ul class="slide__choose-list">
+							<li class="slide__choose-item slide__choose-item--1"
+								onmousemove="changeImg('./assets/img/slide/slide_1.png')">
+							</li>
+							<li class="slide__choose-item slide__choose-item--2"
+								onmousemove="changeImg('./assets/img/slide/slide_2.png')">
+							</li>
+							<li class="slide__choose-item slide__choose-item--3"
+								onmousemove="changeImg('./assets/img/slide/slide_3.png')">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END SLIDE -->
+
+	<!-- INTRODUCE -->
+	<div class="introduce container">
+		<div class="grid">
+			<div class="row">
+				<div class="column-12">
+					<div class="introduce__content">
+						<h3 class="introduce__title">Chào mừng đến với Luxstay!</h3>
+						<p class="introduce__text-intro" style="margin-bottom: 16px;">Đặt chỗ ở, homestay, cho thuê xe,
+							trải nghiệm và nhiều hơn nữa trên Luxstay</p>
+						<p class="introduce__text-auth"><a href="">Đăng nhập</a> hoặc <a href="">Đăng ký</a> để trải
+							nghiệm !</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END INTRODUCE -->
+
+	<!-- SERVICE -->
+	<div class="service container">
+		<div class="grid">
+			<div class="row">
+				<div class="column-2 service__item">
+					<div class="service__card">
+						<div class="service__card-header">
+							<img src="./assets/img/service/homestay.png" class="service__card-img"></img>
+						</div>
+						<div class="service__card-body">
+							<h3 class="service__card-title">Homestay</h3>
+							<div class="service__card-sub-title">Căn hộ dịch vụ & Biệt thự</div>
+						</div>
+					</div>
+				</div>
+				<div class="column-2 service__item">
+					<div class="service__card">
+						<div class="service__card-header">
+							<img src="./assets/img/service/vethamquan.jpg" class="service__card-img"></img>
+						</div>
+						<div class="service__card-body">
+							<h3 class="service__card-title">Vé tham quan</h3>
+							<div class="service__card-sub-title">Mua vé thật dễ dàng</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END SERVICE -->
+
+	<!-- HIGHT LIGHT -->
+	<div class="hight__light container">
+		<div class="grid">
+			<div class="row">
+				<div class="column-12 hight___light-header">
+					<h3 class="hight___light-title">
+						Địa điểm nổi bật
+					</h3>
+					<div class="hight___light-subtitle">
+						Cùng Luxstay bắt đầu chuyến hành trình chinh phục thế giới của bạn
+					</div>
+				</div>
+				<div class="column-5-2 hight___light-item">
+					<div class="left-icon">
+						<i class="fas fa-chevron-left"></i>
+					</div>
+					<img src="./assets/img/hightlight/hanoi.png" class="hight___light-item-img">
+					<div class="hight___light-item-dis">
+						<h3 class="hight___light-item-location">Hà Nội</h3>
+						<div class="hight___light-item-leave">2910 <span class="hight___light-item-text">Chỗ ở</span>
+						</div>
+					</div>
+				</div>
+				<div class="column-5-2 hight___light-item">
+					<img src="./assets/img/hightlight/hochiminh.png" class="hight___light-item-img">
+					<div class="hight___light-item-dis">
+						<h3 class="hight___light-item-location">TP. Hồ Chí Minh</h3>
+						<div class="hight___light-item-leave">2364 <span class="hight___light-item-text">Chỗ ở</span>
+						</div>
+					</div>
+				</div>
+				<div class="column-5-2 hight___light-item">
+					<img src="./assets/img/hightlight/vungtau.png" class="hight___light-item-img">
+					<div class="hight___light-item-dis">
+						<h3 class="hight___light-item-location">Vũng Tàu</h3>
+						<div class="hight___light-item-leave">533 <span class="hight___light-item-text">Chỗ ở</span>
+						</div>
+					</div>
+				</div>
+				<div class="column-5-2 hight___light-item">
+					<img src="./assets/img/hightlight/dalat.png" class="hight___light-item-img">
+					<div class="hight___light-item-dis">
+						<h3 class="hight___light-item-location">Đà Lạt</h3>
+						<div class="hight___light-item-leave">1471 <span class="hight___light-item-text">Chỗ ở</span>
+						</div>
+					</div>
+				</div>
+				<div class="column-5-2 hight___light-item">
+					<img src="./assets/img/hightlight/danang.png" class="hight___light-item-img">
+					<div class="hight___light-item-dis">
+						<h3 class="hight___light-item-location">Đà Nẵng</h3>
+						<div class="hight___light-item-leave">904 <span class="hight___light-item-text">Chỗ ở</span>
+						</div>
+					</div>
+					<div class="right-icon">
+						<i class="fas fa-chevron-right"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END HIGHT LIGHT -->
+
+	<!-- ENDOW -->
+	<div class="endow container">
+		<div class="grid">
+			<div class="row">
+				<div class="column-6 endow-header">
+					<h3 class=" endow-title">
+						Ưu đãi độc quyền
+					</h3>
+					<div class=" endow-subtitle">
+						Những địa điểm thường đến mà Luxstay gợi ý dành cho bạn
+					</div>
+				</div>
+				<div class="column-6 endow-header">
+					<div class="endow-subtitle-more">
+						Xem thêm
+					</div>
+				</div>
+				<div class="column-3 endow-item">
+					<div class="left-icon">
+						<i class="fas fa-chevron-left"></i>
+					</div>
+					<img src="./assets/img/endow/1.jpg" class="endow-item-img">
+					<div class="endow-item-dis">
+						<h3 class="endow-item-location">Hà Nội</h3>
+						<div class="endow-item-leave">2910 <span class="endow-item-text">Chỗ ở</span></div>
+					</div>
+				</div>
+				<div class="column-3 endow-item">
+					<img src="./assets/img/endow/2.jpg" class="endow-item-img">
+					<div class="endow-item-dis">
+						<h3 class="endow-item-location">Hà Nội</h3>
+						<div class="endow-item-leave">2910 <span class="endow-item-text">Chỗ ở</span></div>
+					</div>
+				</div>
+				<div class="column-3 endow-item">
+					<img src="./assets/img/endow/3.jpg" class="endow-item-img">
+					<div class="endow-item-dis">
+						<h3 class="endow-item-location">Hà Nội</h3>
+						<div class="endow-item-leave">2910 <span class="endow-item-text">Chỗ ở</span></div>
+					</div>
+					<div class="right-icon">
+						<i class="fas fa-chevron-right"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END ENDOW -->
+
+	<!-- SUGGEST -->
+	<div class="suggest container">
+		<div class="grid">
+			<div class="row">
+				<div class="column-12 suggest-header">
+					<h3 class=" suggest-title">
+						Gợi ý từ Luxstay
+					</h3>
+					<div class=" suggest-subtitle">
+						Những địa điểm thường đến mà Luxstay gợi ý dành cho bạn
+					</div>
+				</div>
+				<div class="column-4 suggest-item">
+					<div class="left-icon">
+						<i class="fas fa-chevron-left"></i>
+					</div>
+					<img src="./assets/img/suggest/1.jpg" class="suggest-item-img">
+					<div class="suggest-item-dis">
+						<h3 class="suggest-item-location">Vũng Tàu Biệt thự hồ bơi</h3>
+						<div class="suggest-item-leave">Những căn biệt thự có hồ bơi dành cho kỳ nghỉ của bạn tại Vũng
+							Tàu</div>
+					</div>
+				</div>
+				<div class="column-4 suggest-item">
+					<img src="./assets/img/suggest/2.jpg" class="suggest-item-img">
+					<div class="suggest-item-dis">
+						<h3 class="suggest-item-location">Vi vu ngoại thành Hà Nội</h3>
+						<div class="suggest-item-leave">Trải nghiệm không gian thoáng đãng cho chuyến đi ngay gần Hà
+							Nội</span></div>
+					</div>
+				</div>
+				<div class="column-4 suggest-item">
+					<img src="./assets/img/suggest/3.jpg" class="suggest-item-img">
+					<div class="suggest-item-dis">
+						<h3 class="suggest-item-location">Hà Nội nội thành lãng mạn</h3>
+						<div class="suggest-item-leave">Không gian lãng mạn dành cho cặp đôi tại trung tâm Hà Nội</div>
+					</div>
+				</div>
+				<div class="column-4 suggest-item">
+					<img src="./assets/img/suggest/4.jpg" class="suggest-item-img">
+					<div class="suggest-item-dis">
+						<h3 class="suggest-item-location">Sài Gòn cần là có ngay</h3>
+						<div class="suggest-item-leave">Những căn homestay có 01 phòng ngủ tại Sài Gòn có thể đặt nhanh
+							chóng</div>
+					</div>
+					<div class="right-icon">
+						<i class="fas fa-chevron-right"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END SUGGEST -->
+
+	<!-- DISCOVER -->
+	<div class="discover container">
+		<div class="grid">
+			<div class="row">
+				<div class="column-12 discover-header">
+					<h3 class=" discover-title">
+						Gợi ý khám phá
+					</h3>
+					<div class=" discover-subtitle">
+						Để mỗi chuyến đi là một hành trình truyền cảm hứng, mỗi căn phòng là một khoảng trời an yên
+					</div>
+				</div>
+
+				<div class="column-3 discover-item">
+					<div class="left-icon">
+						<i class="fas fa-chevron-left"></i>
+					</div>
+					<img src="./assets/img/discover/1.jpg" class="discover-item-img">
+					<div class="discover-item-background">
+						<div class=" discover-item-dis-1 column-12">
+							<span class="discover-item-info">Thông tin homestay</span>
+						</div>
+						<div class="discover-item-dis-2 column-12">
+							<span class="discover-item-text">5 resort hạng sang ở Việt Nam xuất hiện trên tạp chí du
+								lịch
+								Anh</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="column-3 discover-item">
+					<img src="./assets/img/discover/2.jpg" class="discover-item-img">
+					<div class="discover-item-background">
+						<div class=" discover-item-dis-1 column-12">
+							<span class="discover-item-info">Thông tin homestay</span>
+						</div>
+						<div class="discover-item-dis-2 column-12">
+							<span class="discover-item-text">Du lịch Cần Thơ nhất định phải ghé thăm những địa điểm
+								này</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="column-3 discover-item">
+					<img src="./assets/img/discover/3.jpg" class="discover-item-img">
+					<div class="discover-item-background">
+						<div class=" discover-item-dis-1 column-12">
+							<span class="discover-item-info">Thông tin homestay</span>
+						</div>
+						<div class="discover-item-dis-2 column-12">
+							<span class="discover-item-text">Tuần lễ “Tôi yêu bánh mì Sài Gòn” chính thức diễn ra từ
+								ngày
+								24/3</span>
+						</div>
+					</div>
+					<div class="right-icon">
+						<i class="fas fa-chevron-right"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END DISCOVER -->
+
+	<!-- TUTORIAL -->
+	<div class="tutorial container">
+		<div class="grid">
+			<div class="row">
+				<div class="column-12 discover-header">
+					<h3 class=" discover-title">
+						Hướng dẫn sử dụng
+					</h3>
+					<div class=" discover-subtitle">
+						Đặt chỗ nhanh, thanh toán đơn giản, sử dụng dễ dàng
+					</div>
+				</div>
+				<div class="column-5-2 tutorial__item">
+					<img src="./assets/img/tutorial/1.jpg" alt="" class="tutorial__item-img">
+				</div>
+				<div class="column-5-2 tutorial__item">
+					<img src="./assets/img/tutorial/2.jpg" alt="" class="tutorial__item-img">
+				</div>
+				<div class="column-5-2 tutorial__item">
+					<img src="./assets/img/tutorial/3.jpg" alt="" class="tutorial__item-img">
+				</div>
+				<div class="column-5-2 tutorial__item">
+					<img src="./assets/img/tutorial/4.jpg" alt="" class="tutorial__item-img">
+				</div>
+				<div class="column-5-2 tutorial__item">
+					<img src="./assets/img/tutorial/5.jpg" alt="" class="tutorial__item-img">
+				</div>
+
+			</div>
+		</div>
+	</div>
+	<!-- END TUTORIAL -->
+
+	<!-- DOWNLOAD -->
+	<div class="download container">
+		<div class="grid">
+			<div class="row">
+				<div class="column-6">
+					<svg class="download__logo" version="1.1" viewBox="0 0 244 50"
+						class="mb--18 mb--sm-42 app-introduce__logo svg-icon svg-fill">
+						<path pid="0"
+							d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67zm45.839 2.652l-12.45-.05.096-21.789a.957.957 0 00-.965-.945l-.678-.003a.96.96 0 00-.974.939v.047c-.048.095-.05.236-.05.33l-.098 22.636a1.337 1.337 0 001.351 1.326l13.805.056a.958.958 0 00.973-.938l.003-.662a1.037 1.037 0 00-1.013-.946v-.001zm27.64-22.67l-.871-.003c-.563-.003-1.027.42-1.027.937l-.075 15.878c-.014 3.157-3.252 5.735-7.197 5.72-3.943-.014-7.158-2.618-7.144-5.775l.123-15.5.052-.282a.957.957 0 00-.201-.756 1.128 1.128 0 00-.767-.332l-.87-.004c-.513-.002-.924.326-1.028.75a.857.857 0 00-.156.47l-.073 15.69c-.02 4.616 4.47 8.402 9.95 8.424 5.48.022 10.004-3.73 10.025-8.3l.122-15.5.054-.282a.952.952 0 00-.203-.755c-.152-.189-.458-.379-.714-.38zm48.638 11.226c-3.275-1.249-6.696-2.496-6.688-4.393.01-2.42 2.721-4.401 6.05-4.387 3.331.014 6.025 2.017 6.014 4.436l-.002.38a.96.96 0 00.961.953l.675.003a.96.96 0 00.971-.945v-.38c.009-1.66-.709-3.276-2.006-4.515-1.635-1.618-4.092-2.532-6.65-2.494-4.873-.02-8.698 3.047-8.715 6.938.03 3.748 4.416 5.38 8.656 6.962 3.324 1.247 6.795 2.495 6.785 4.487-.01 2.372-3.155 4.399-6.775 4.385-3.668-.016-6.747-2.07-6.737-4.44l.001-.38a.961.961 0 00-.96-.954l-.676-.002a.96.96 0 00-.97.945v.38c-.018 3.843 4.215 6.991 9.38 7.012 5.163.022 9.423-3.092 9.44-6.934-.033-3.796-4.464-5.427-8.754-7.057zM193.66 11.84l-18.844-.076c-.547-.003-.996.42-.999.94l-.002.66c-.002.52.443.946.99.949l8.103.032-.095 21.802c-.003.52.443.947.99.949l.696.002c.546.003.996-.42 1-.94l.095-21.802 8.055.031c.547.003.996-.42.999-.94l.003-.66c.003-.52-.443-.946-.99-.947zm49.264.515c-.144-.33-.481-.52-.867-.52l-.87-.005a.963.963 0 00-.677.28l-.145.14-.147.142-6.609 9.677-6.72-9.734c-.048-.046-.096-.094-.096-.14l-.143-.143a.97.97 0 00-.675-.285l-.774-.003a1.021 1.021 0 00-.872.515 1.03 1.03 0 00.045.988l7.966 11.576-.049 11.307c.006.527.437.95.964.946l.675.002a.957.957 0 00.97-.937l.049-11.308 7.923-11.509c.194-.329.243-.705.052-.989zm-37.898 12.047l3.75-7.994 3.728 8.023-7.478-.03zm15.615 10.954v-.047l-10.5-22.733c-.15-.425-.549-.71-1.102-.807-.603-.049-1.156.231-1.41.703v.046l-10.705 22.697v.047l-.204.471c-.095.283-.06.595.097.849.188.258.483.416.802.428l.854.004c.453.001.806-.282.958-.657l.05-.141 4.314-9.277 9.95.04 4.28 9.31.049.14c.15.38.5.664.952.667l.854.002c.352.002.654-.139.806-.422.152-.281.254-.563.104-.847l-.149-.473zm-86.008-15.15l.817.003a.963.963 0 00.729-.347l4.755-6.218.412-.478a.763.763 0 00.095-.915c-.135-.306-.453-.482-.816-.483l-.863-.004a.929.929 0 00-.868.608l-4.983 6.522a.94.94 0 00-.096.915c.135.22.453.394.816.397h.002zm-6.998 8.45l-.819-.002a.96.96 0 00-.728.347l-4.755 6.207-.413.48a.77.77 0 00-.094.92c.135.309.452.485.816.488l.864.002a.91.91 0 00.82-.478l5.03-6.601a.949.949 0 00.095-.92 1.027 1.027 0 00-.816-.443zm8.019-.453l.148.14 5.55 7.248c.248.284.246.662.095.99-.15.332-.5.519-.9.517l-.896-.004a1.013 1.013 0 01-.697-.286l-.149-.14c-.03-.002-.042-.02-.059-.044a.212.212 0 00-.04-.052l-5.501-7.151a1.005 1.005 0 01-.15-.237l-11.694-15.39-.446-.521c-.248-.285-.246-.662-.096-.993.15-.33.501-.518.9-.516l.897.004a.99.99 0 01.845.428l.15.19 11.992 15.721s.05.048.05.096z">
+						</path>
+					</svg>
+					<div class="download__title">
+						TÌM KIẾM CHỖ Ở GIÁ TỐT NHẤT
+					</div>
+					<div class="download__dis">
+						Luxstay hiện là nền tảng đặt phòng trực tuyến #1 Việt Nam. Đồng hành cùng chúng tôi, bạn có
+						những chuyến đi mang đầy
+						trải nghiệm. Với Luxstay, việc đặt chỗ ở, biệt thự nghỉ dưỡng, khách sạn, nhà riêng, chung cư...
+						trở nên nhanh chóng,
+						thuận tiện và dễ dàng.
+					</div>
+
+					<div class="row download__app-detail">
+						<div class="download__qr column-4">
+							<img src="./assets/img/download/qr-code.png" class="download__qr-detail">
+						</div>
+						<div class=" column-8">
+							<div class="row download__app">
+								<div class="column-6">
+									<img src="./assets/img/download/apple-store.svg" alt="" class="download__app-apple">
+								</div>
+								<div class="column-6">
+									<img src="./assets/img/download/huawei.svg" alt="" class="download__app-huawei">
+								</div>
+								<div class="column-6">
+									<img src="./assets/img/download/google-play.svg" alt="" class="download__app-goole">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="column-6">
+					<img src="./assets/img/download/home-02.png" alt="" class="home__logo-2">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END DOWNLOAD -->
+
+	<!-- INFO -->
+	<div class="info container">
+		<div class="grid">
+			<div class="row">
+				<div class="column-5-2">
+					<svg class="info__logo" version="1.1" viewBox="0 0 244 50"
+						class="mb--18 mb--sm-42 app-introduce__logo svg-icon svg-fill">
+						<path pid="0"
+							d="M25.093 0c13.781.06 24.94 11.317 24.882 25.106C49.917 38.894 38.663 50.058 24.88 50 11.1 49.942-.059 38.683.001 24.894.057 11.106 11.31-.058 25.092 0zm11.801 31.9L14.398 16.053c.241-.26.48-.518.74-.777 2.7-2.687 5.971-4.031 9.775-4.015 3.804.015 7.064 1.388 9.741 4.098.238.241.476.482.694.743l-5.951 4.133 2.381 1.688 5.153-3.576v.02L39.33 16.7c-.692-1.203-1.584-2.325-2.616-3.39-3.231-3.292-7.167-4.947-11.788-4.967-4.6-.019-8.53 1.603-11.809 4.867a17.806 17.806 0 00-2.682 3.408l1.429 1.004 23.429 16.51c-.24.26-.48.518-.74.777-2.7 2.687-5.971 4.011-9.775 3.996-3.803-.016-7.063-1.37-9.74-4.08-.258-.26-.496-.521-.734-.782l6.111-4.251-.139-.181-2.183-1.528-5.373 3.735v-.021l-2.377 1.65a17.824 17.824 0 002.654 3.43c3.253 3.291 7.169 4.946 11.769 4.965 4.62.021 8.549-1.602 11.83-4.866 1.06-1.075 1.96-2.21 2.682-3.406l-2.383-1.67zm45.839 2.652l-12.45-.05.096-21.789a.957.957 0 00-.965-.945l-.678-.003a.96.96 0 00-.974.939v.047c-.048.095-.05.236-.05.33l-.098 22.636a1.337 1.337 0 001.351 1.326l13.805.056a.958.958 0 00.973-.938l.003-.662a1.037 1.037 0 00-1.013-.946v-.001zm27.64-22.67l-.871-.003c-.563-.003-1.027.42-1.027.937l-.075 15.878c-.014 3.157-3.252 5.735-7.197 5.72-3.943-.014-7.158-2.618-7.144-5.775l.123-15.5.052-.282a.957.957 0 00-.201-.756 1.128 1.128 0 00-.767-.332l-.87-.004c-.513-.002-.924.326-1.028.75a.857.857 0 00-.156.47l-.073 15.69c-.02 4.616 4.47 8.402 9.95 8.424 5.48.022 10.004-3.73 10.025-8.3l.122-15.5.054-.282a.952.952 0 00-.203-.755c-.152-.189-.458-.379-.714-.38zm48.638 11.226c-3.275-1.249-6.696-2.496-6.688-4.393.01-2.42 2.721-4.401 6.05-4.387 3.331.014 6.025 2.017 6.014 4.436l-.002.38a.96.96 0 00.961.953l.675.003a.96.96 0 00.971-.945v-.38c.009-1.66-.709-3.276-2.006-4.515-1.635-1.618-4.092-2.532-6.65-2.494-4.873-.02-8.698 3.047-8.715 6.938.03 3.748 4.416 5.38 8.656 6.962 3.324 1.247 6.795 2.495 6.785 4.487-.01 2.372-3.155 4.399-6.775 4.385-3.668-.016-6.747-2.07-6.737-4.44l.001-.38a.961.961 0 00-.96-.954l-.676-.002a.96.96 0 00-.97.945v.38c-.018 3.843 4.215 6.991 9.38 7.012 5.163.022 9.423-3.092 9.44-6.934-.033-3.796-4.464-5.427-8.754-7.057zM193.66 11.84l-18.844-.076c-.547-.003-.996.42-.999.94l-.002.66c-.002.52.443.946.99.949l8.103.032-.095 21.802c-.003.52.443.947.99.949l.696.002c.546.003.996-.42 1-.94l.095-21.802 8.055.031c.547.003.996-.42.999-.94l.003-.66c.003-.52-.443-.946-.99-.947zm49.264.515c-.144-.33-.481-.52-.867-.52l-.87-.005a.963.963 0 00-.677.28l-.145.14-.147.142-6.609 9.677-6.72-9.734c-.048-.046-.096-.094-.096-.14l-.143-.143a.97.97 0 00-.675-.285l-.774-.003a1.021 1.021 0 00-.872.515 1.03 1.03 0 00.045.988l7.966 11.576-.049 11.307c.006.527.437.95.964.946l.675.002a.957.957 0 00.97-.937l.049-11.308 7.923-11.509c.194-.329.243-.705.052-.989zm-37.898 12.047l3.75-7.994 3.728 8.023-7.478-.03zm15.615 10.954v-.047l-10.5-22.733c-.15-.425-.549-.71-1.102-.807-.603-.049-1.156.231-1.41.703v.046l-10.705 22.697v.047l-.204.471c-.095.283-.06.595.097.849.188.258.483.416.802.428l.854.004c.453.001.806-.282.958-.657l.05-.141 4.314-9.277 9.95.04 4.28 9.31.049.14c.15.38.5.664.952.667l.854.002c.352.002.654-.139.806-.422.152-.281.254-.563.104-.847l-.149-.473zm-86.008-15.15l.817.003a.963.963 0 00.729-.347l4.755-6.218.412-.478a.763.763 0 00.095-.915c-.135-.306-.453-.482-.816-.483l-.863-.004a.929.929 0 00-.868.608l-4.983 6.522a.94.94 0 00-.096.915c.135.22.453.394.816.397h.002zm-6.998 8.45l-.819-.002a.96.96 0 00-.728.347l-4.755 6.207-.413.48a.77.77 0 00-.094.92c.135.309.452.485.816.488l.864.002a.91.91 0 00.82-.478l5.03-6.601a.949.949 0 00.095-.92 1.027 1.027 0 00-.816-.443zm8.019-.453l.148.14 5.55 7.248c.248.284.246.662.095.99-.15.332-.5.519-.9.517l-.896-.004a1.013 1.013 0 01-.697-.286l-.149-.14c-.03-.002-.042-.02-.059-.044a.212.212 0 00-.04-.052l-5.501-7.151a1.005 1.005 0 01-.15-.237l-11.694-15.39-.446-.521c-.248-.285-.246-.662-.096-.993.15-.33.501-.518.9-.516l.897.004a.99.99 0 01.845.428l.15.19 11.992 15.721s.05.048.05.096z">
+						</path>
+					</svg>
+					<div class="info__contact">
+						<div class="info__contact-icon">
+							<img src="./assets/img/info/1.jpg" alt="" class="info__logo-img">
+						</div>
+						<div class="info__contact-mess">
+							<div class="info__contact-title">Messenger</div>
+							<a class="info__contact-content">
+								http://m.me/luxstay
+							</a>
+						</div>
+					</div>
+					<div class="info__contact">
+						<div class="info__contact-icon">
+							<img src="./assets/img/info/2.jpg" alt="" class="info__logo-img">
+						</div>
+						<div class="info__contact-call">
+							<div class="info__contact-title">Call center</div>
+							<a href="tel:18006586" class="info__contact-content">
+								18006586 (Việt Nam)
+							</a>
+							<a href="tel:0889866666" class="info__contact-content">
+								0889866666
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="column-5-2">
+					<div class="info__title">TOP HOMESTAY ĐƯỢC YÊU THÍCH</div>
+					<ul class="info__title-list">
+						<li class="info__title-item">Homestay Đà Lạt</li>
+						<li class="info__title-item">Homestay Hà Nội</li>
+						<li class="info__title-item">Homestay Hồ Chí Minh</li>
+						<li class="info__title-item">Homestay Sapa</li>
+						<li class="info__title-item">Homestay Vũng Tàu</li>
+						<li class="info__title-item">Homestay Tam Đảo</li>
+						<li class="info__title-item">Homestay Hội An</li>
+						<li class="info__title-item">Homestay Đà Nẵng</li>
+						<li class="info__title-item">Homestay Hạ Long</li>
+						<li class="info__title-item">Homestay Đà Nẵng</li>
+					</ul>
+				</div>
+				<div class="column-5-2">
+					<div class="info__title">Không gian ưa thích</div>
+					<ul class="info__title-list">
+						<li class="info__title-item">Căn hộ dịch vụ</li>
+						<li class="info__title-item">Biệt thự</li>
+						<li class="info__title-item">Nhà riêng</li>
+						<li class="info__title-item">Studio</li>
+					</ul>
+				</div>
+				<div class="column-5-2">
+					<div class="info__title">Về chúng tôi</div>
+					<ul class="info__title-list">
+						<li class="info__title-item">Blog</li>
+						<li class="info__title-item">Điều khoản hoạt động</li>
+						<li class="info__title-item">1800 6586</li>
+						<li class="info__title-item">+84 8898 66666</li>
+						<li class="info__title-item">info@luxstay.com</li>
+						<li class="info__title-item">Trang thông tin dành cho chủ nhà</li>
+						<li class="info__title-item">Cơ hội nghề nghiệp</li>
+						<li class="info__title-item">Tạp chí du lịch</li>
+					</ul>
+				</div>
+				<div class="column-5-2">
+					<div class="info__title">Tải ứng dụng Luxstay</div>
+					<div class="info__download">
+						<div class="row info__download-detail">
+							<div class=" column-4">
+								<div class="info__download-qr">
+									<img src="./assets/img/download/qr-code.png" class="info__download-qr-img">
+								</div>
+							</div>
+							<div class=" column-6">
+								<div class="row info__download">
+									<div class="column-12">
+										<img src="./assets/img/download/apple-store.svg" alt=""
+											class="info__download-apple">
+									</div>
+									<div class="column-12">
+										<img src="./assets/img/download/huawei.svg" alt=""
+											class="info__download-huawei">
+									</div>
+									<div class="column-12">
+										<img src="./assets/img/download/google-play.svg" alt=""
+											class="info__download-google">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END INFO -->
+
+	<!-- FOOTER -->
+	<div class="footer ">
+		<div class="grid">
+			<div class="row">
+				<div class="column-12 footer__content">
+					<p class="footer__1">© 2021 Luxstay. Bản quyền thuộc về Công ty TNHH Luxstay Việt Nam - MSDN:
+						0108308449. Mọi hành vi sao chép đều là phạm
+						pháp nếu không có sự cho phép bằng văn bản của chúng tôi.</p>
+					<p class="footer__2">
+						Tầng 21 tòa nhà Capital Tower số 109 phố Trần Hưng Đạo, phường Cửa Nam, quận Hoàn Kiếm, Hà Nội.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END FOOTER -->
+
+
+	<script src="./assets/js/app.js"></script>
+</body>
+
+</html>

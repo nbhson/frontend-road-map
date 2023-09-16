@@ -1,0 +1,21 @@
+/* TABLE AND MOBILE*/
+@media (max-width: 64em) {
+  .btn {
+    padding: 15px 20px;
+  }
+}
+
+/* MOBILE*/
+@media (max-width: 46.1875em) {
+  .s-col-1 {
+    width: calc(100% / 1);
+  }
+
+  .s-with-1 {
+    width: calc(100% / 1);
+  }
+
+  .s-contact-email {
+    margin-bottom: 8px;
+  }
+}

@@ -1,0 +1,168 @@
+.home-product {
+  padding-bottom: 10px;
+}
+.home-product-item {
+  background-color: var(--white-color);
+  background-size: contain;
+  margin-top: 10px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  box-shadow: 0 1px 2px rgb(197, 196, 196);
+
+  /* khi co chuyen dong thi tao animation cho hanh ddong do */
+  transition: transform ease-in 0.1s;
+}
+
+.home-product-item:hover   {
+  transform: translateY(-1px);
+  box-shadow: 0 1px 20px rgba(197, 196, 196, 0.7);
+}
+
+.home-product-item__img {
+  /* SET chieu ngang bang chieu ngang cua the chua no (dang la .home-product-item) */
+  padding-top: 100%;
+}
+
+.home-product-item-name {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-color);
+  line-height: 1.8rem;
+  margin: 10px 10px 6px;
+
+  /* tao dau 3 ... */
+  height: 3.6rem;
+  display: block;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  text-overflow: ellipsis;
+}
+.home-product-item-price {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-product-item-price-old {
+  font-size: 1.4rem;
+  margin-left: 10px;
+  color: #666;
+  text-decoration: line-through;
+}
+.home-product-item-price-current {
+  font-size: 1.6rem;
+  color: var(--primary-color);
+  margin-left: 10px;
+}
+.home-product-item-action {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 10px 0px;
+}
+.home-product-item-like {
+  font-size: 1.4rem;
+}
+
+.home-product-item-like-empty {
+}
+.home-product-item-like-fill {
+  display: none;
+}
+
+.home-product-item__like--liked .home-product-item-like-fill {
+  display: inline-block;
+  color: #f63d30;
+}
+
+.home-product-item__like--liked .home-product-item-like-empty {
+  display: none;
+}
+.home-product-item__start-yellow {
+  color: var(--start-gold-yellow);
+}
+.home-product-item-rating {
+  font-size: 0.6rem;
+
+  /* tu day tu trai sang phai, toi khi nao dung item tiep theo*/
+  margin-left: auto;
+}
+.home-product-item_sold {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-left: 4px;
+}
+.home-product-item-origin {
+  display: flex;
+  justify-content: space-between;
+  margin: 6px 10px 0;
+  font-weight: 300;
+  color: #595959;
+}
+.home-product-item-brand {
+}
+.home-product-item-origin {
+}
+.home-product-item-favourite {
+  position: absolute;
+  top: 12px;
+  left: -4px;
+  color: var(--primary-color);
+  /* currentColor se an theo color cua no */
+  background-color: currentColor;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding-right: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.home-product-item-favourite::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  /* currentColor la mau cua thang cha o tren */
+  border-top: 3px solid currentColor;
+  border-left: 3px solid transparent;
+  filter: brightness(60%);
+}
+.home-product-item-favourite i {
+  margin: 0 3px 0 5px;
+  color: var(--white-color)
+}
+.home-product-item-favourite span {
+  color: var(--white-color)
+}
+.home-product-item-sale-off {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 40px;
+  height: 36px;
+  text-align: center;
+  background: rgba(255, 216, 64, 0.95);
+}
+.home-product-item-sale-off::after  {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+
+  border-width: 0 20px 6px;
+  border-style: solid;
+  border-color:transparent rgba(255, 216, 64, 0.95)  transparent rgba(255, 216, 64, 0.95);
+}
+.home-product-item-percent {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  position: relative;
+  font-weight: 600;
+  color: #EE4D2D;
+}
+.home-product-item-label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--white-color);
+}

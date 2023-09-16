@@ -1,0 +1,74 @@
+.discover {
+}
+.discover-header {
+  list-style: none;
+}
+.discover-title {
+  font-size: 24px;
+  color: var(--header-color);
+  margin-bottom: 20px;
+}
+.discover-subtitle {
+  color: var(--text-color);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.discover-item {
+  height: 250px;
+  position: relative;
+}
+.discover-item-img {
+  width: 100%;
+  height: 100%;
+  border-radius: var(--border-radius-16);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 8px;
+  position: relative;
+}
+.discover-item-dis-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 150px;
+  width: 100%;
+  padding: 24px;
+}
+.discover-item-dis-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 104px;
+  padding: 24px;
+}
+.discover-item-info {
+  font-size: 12px;
+  background: rgba(0, 0, 0, 0.2);
+  color: var(--white-color);
+  text-transform: uppercase;
+  padding: 4.4px 28.4px;
+  border-radius: var(--border-radius-16);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.discover-item-info:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.discover-item-text {
+  font-size: 18px;
+  color: var(--white-color);
+  font-weight: 600;
+  /* text-shadow: 0 0 1px var(--black-color); */
+}
+
+.discover-item-background {
+  margin-left: 5px;
+  width: calc(100% - 10px);
+  height: calc(100%);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

@@ -1,0 +1,39 @@
+.content-section {
+  width: 800px;
+  text-align: justify;
+  /* căn giữa */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 64px 0;
+}
+
+.content-section .section-heading {
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.content-section .section-sub-heading {
+  font-size: 15px;
+  margin: 25px 0;
+  font-style: italic;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.content-section .about-text {
+  font-size: 15px;
+  /* 1.4 là tiếng anh - 1.6 là tiếng việt*/
+  line-height: 1.4;
+}
+
+.content-section .list-member p {
+  margin: 48px 0 13px 0;
+}
+
+.content-section .list-member img {
+  width: 154px;
+  height: 170px;
+  border-radius: 4px;
+}
