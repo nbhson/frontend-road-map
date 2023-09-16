@@ -22,22 +22,6 @@ function CarBuilder() {
   };
 }
 
-function TruckBuilder() {
-  this.truck = null;
-
-  this.step1 = function () {
-    this.truck = new Truck();
-  };
-
-  this.step2 = function () {
-    this.truck.addParts();
-  };
-
-  this.get = function () {
-    return this.truck;
-  };
-}
-
 function Car() {
   this.doors = 0;
 
@@ -50,23 +34,9 @@ function Car() {
   };
 }
 
-function Truck() {
-  this.doors = 0;
-
-  this.addParts = function () {
-    this.doors = 2;
-  };
-
-  this.say = function () {
-    console.log("I am a " + this.doors + "-door truck");
-  };
-}
-
 const shop = new Shop();
 const carBuilder = new CarBuilder();
-const truckBuilder = new TruckBuilder();
 const car = shop.construct(carBuilder);
-const truck = shop.construct(truckBuilder);
 
 car.say();
 truck.say();

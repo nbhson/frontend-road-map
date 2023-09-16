@@ -7,6 +7,8 @@
 - `Abstract Factory` pattern cho phép bạn tạo ra các hệ thống đối tượng có tính tương thích, bằng cách đảm bảo rằng các đối tượng được tạo ra từ cùng một `Abstract Factory` sẽ tương thích với nhau
 - Nó cung cấp một cách để đóng gói việc tạo đối tượng và giúp tránh sự phụ thuộc vào các lớp cụ thể của đối tượng.
 
+> Khi sử dụng `Abstract Factory` pattern, bạn không cần phải biết cụ thể về cách tạo từng đối tượng UI trong client code. Thay vào đó, bạn sử dụng phương thức được cung cấp bởi `Abstract Factory` để tạo ra các đối tượng mà bạn cần, và cách chúng được tạo ra là trách nhiệm của các Concrete Factory.
+
 ## Diagram
 
 ![javascript-abstract-factory](javascript-abstract-factory.jpg);
