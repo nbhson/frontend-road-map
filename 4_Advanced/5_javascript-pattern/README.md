@@ -1,6 +1,7 @@
 # Javascript Pattern
 
-https://www.patterns.dev/
+- https://www.patterns.dev/
+- https://www.dofactory.com/javascript/design-patterns
 
 > Ngôn ngữ lập trình đều có những sai sót vốn có của nó, nên những lập trình đã tìm kím và đúc kết ra `những giải pháp chung` đã chứng minh được qua những thành công trước đó, đó chính là Design Pattern.
 
