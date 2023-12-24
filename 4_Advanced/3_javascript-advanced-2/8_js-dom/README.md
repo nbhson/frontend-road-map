@@ -5,6 +5,11 @@
 - `Cách thức hoạt động`: Các phương thức như getElementById, appendChild, innerHTML, và các phương thức khác được sử dụng để thêm, sửa đổi hoặc xóa trực tiếp các phần tử trong cây DOM.
 - `Hiệu suất`: Có thể gây ra hiệu suất kém nếu thực hiện nhiều thay đổi trực tiếp trên DOM, đặc biệt là trong các ứng dụng lớn và phức tạp.
 
+- Một số điểm quan trọng về zone.js và Angular:
+    - Change Detection
+    - Binding Dữ Liệu Hai Chiều (Two-Way Data Binding)
+    - Error Handling
+
 ## Virtual DOM
 - `Khái niệm`: Đây là một biểu diễn **ảo** của cây DOM thực tế được lưu trữ trong bộ nhớ. Là một kỹ thuật được sử dụng trong các framework như React để tối ưu hóa quá trình cập nhật DOM.
 - `Cách thức hoạt động`: Các thay đổi trong ứng dụng không được áp dụng trực tiếp lên DOM thực tế mà thay vào đó, được áp dụng trên Virtual DOM. Sau đó, Virtual DOM so sánh với DOM thực tế để xác định những thay đổi cần được áp dụng và chỉ cập nhật những phần thay đổi đó.
@@ -19,3 +24,7 @@
 Tóm tắt sự khác biệt:
 - **Virtual DOM**: Tập trung vào tối ưu hóa cập nhật DOM và giảm thiểu thao tác trực tiếp trên DOM để tăng hiệu suất.
 - **Shadow DOM**: Tập trung vào việc cô lập và tái sử dụng các phần tử, giúp tránh xung đột CSS và DOM bên ngoài và tạo ra một phạm vi cục bộ cho các phần tử.
+
+## Trường hợp sử dụng
+
+## Reactivity
