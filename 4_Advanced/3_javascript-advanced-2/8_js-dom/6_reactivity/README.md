@@ -65,7 +65,6 @@
         }
       );
 
-      // Lắng nghe sự kiện click và tăng giá trị của trạng thái
       document
         .getElementById("clickButton")
         .addEventListener("click", function () {
