@@ -1,0 +1,33 @@
+h2 {
+    background-color: pink;
+
+    @at-root {
+        .style {
+            font-size: 20px;
+            font-weight: bold;
+            color: violet;
+
+            @at-root {
+                .style_4 {
+                    font-size: 20px;
+                    font-weight: bold;
+                    color: violet;
+                }
+            }
+        }
+    }
+
+    .style_2 {
+        font-size: 20px;
+        font-weight: bold;
+        color: violet;
+
+        @at-root {
+            .style_3{
+                font-size: 20px;
+                font-weight: bold;
+                color: violet;
+            }
+        }
+    }
+}

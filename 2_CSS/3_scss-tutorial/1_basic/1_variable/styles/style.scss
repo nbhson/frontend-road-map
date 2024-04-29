@@ -17,6 +17,9 @@ $padding_1: 10px;
 $padding_2: 20px;
 $padding_3: 30px;
 
+$width_1: 100px;
+$width_2: 200px;
+
 // Variable 
 body {
   background-color: $bgcolor;
@@ -33,10 +36,15 @@ body {
   }
 }
 
-
-
 div.content_1{
   background: $primary_2;
   color: $danger_1;
   padding: $padding_2;
+}
+
+div.content_2 {
+  width: calc($width_1 + $width_2);
+  height: calc($width_1 + $width_2);
+  color: $textcolor;
+  background-color: $dark_2;
 }

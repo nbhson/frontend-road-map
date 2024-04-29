@@ -1,0 +1,13 @@
+@mixin border($width, $color) {
+    border: $width solid $color;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+}
+
+.element {
+    @extend .box;
+    @include border(2px, red); // Sử dụng mixin border với độ dày 2px và màu xám nhạt
+}

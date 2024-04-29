@@ -1,0 +1,1 @@
+.container{width:100%}article[role=main]{float:left;width:62.5%;height:200px;background-color:gray}article[role=alert]{float:left;width:62.5%;height:calc(250px + 2rem);background-color:green}
