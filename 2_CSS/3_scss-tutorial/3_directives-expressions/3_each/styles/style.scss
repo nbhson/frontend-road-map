@@ -1,0 +1,3 @@
+@for $i from 1 through 4 {  
+    .p-#{$i} { padding-left : $i * 10px; }  
+}   

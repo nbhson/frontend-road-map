@@ -1,0 +1,40 @@
+// normal
+h2 {
+    color: if(1 + 1==2, green, red);
+}
+
+// directive
+h3 {
+    @if 1+1==2 {
+        border: 1px solid blue;
+    }
+
+    @if 5>3 {
+        border: 2px dotted blue;
+    }
+
+    @if null {
+        border: 3px double blue;
+    }
+}
+
+
+$type: monster;
+
+p {
+    @if $type ==ocean {
+        color: blue;
+    }
+
+    @else if $type ==matador {
+        color: red;
+    }
+
+    @else if $type ==monster {
+        color: violet;
+    }
+
+    @else {
+        color: black;
+    }
+}
