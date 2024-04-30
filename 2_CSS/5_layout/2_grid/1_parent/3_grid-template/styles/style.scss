@@ -1,0 +1,17 @@
+@import '../../../support.scss';
+
+.item-a {
+  grid-area: header;
+}
+
+.item-d {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template:
+    [row1-start] "header header header" 100px [row1-end]
+    [row2-start] "footer footer footer" 100px [row2-end]
+    / auto 50px auto;
+}

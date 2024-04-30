@@ -1,0 +1,1 @@
+.container{background-color:beige;height:250px}.container{display:grid;grid-template-columns:100px 50px 100px;grid-template-rows:80px auto auto auto;-moz-column-gap:4px;column-gap:4px;row-gap:20px;gap:4px 20px}

@@ -1,0 +1,12 @@
+@import '../../../support.scss';
+
+.container {
+  display: grid;
+  grid-template-columns: 100px 50px 100px;
+  grid-template-rows: 80px auto auto auto; 
+  column-gap: 4px;
+  row-gap: 20px;
+
+  // shorthand
+  gap: 4px 20px;
+}

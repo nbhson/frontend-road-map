@@ -18,6 +18,37 @@ This chart contains every possible property and value you can use when you're wo
 
 ![Chart](./chart.png)
 
+## Shorthand Flexbox Properties
+
+### flex shorthand
+
+![alt text](https://dev-to-uploads.s3.amazonaws.com/i/onoxj7gs9xj4wuf87kjl.png)
+
+```scss
+.box-2{
+    flex : 2 1 30em;
+}
+```
+
+### flex-flow shorthand
+
+![alt text](https://dev-to-uploads.s3.amazonaws.com/i/awniqyrepbha5jdquwxh.png)
+
+```scss
+.container{
+    flex-flow : row wrap;
+}
+```
+
+### place-content shorthand
+
+![alt text](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/72yaytxgighz0cjskp2e.png)
+
+```scss
+.container {
+    place-content : center flex-end;
+}
+
 <https://www.freecodecamp.org/news/css-flexbox-tutorial-with-cheatsheet/>
 
 <https://css-tricks.com/snippets/css/a-guide-to-flexbox/>
