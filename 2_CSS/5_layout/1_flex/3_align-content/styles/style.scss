@@ -1,0 +1,22 @@
+@import '../../support.scss';
+
+.container {
+  height: 200px;
+  display: flex;
+  align-items: flex-start;
+  align-items: flex-end;
+  align-items: center;
+  align-items: stretch;
+  align-items: baseline;
+
+
+  div {
+    // height: auto; // use for align-items: stretch;
+  }
+
+  .box-1,
+  .box-2,
+  .box-3 {
+    height: var(--height); // use for align-items: baseline | flex-end;
+  }
+}

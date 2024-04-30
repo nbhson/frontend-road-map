@@ -1,0 +1,1 @@
+.flexCenter,.box,.container div{display:flex;justify-content:center;align-items:center}.box,.container div{width:100px;height:100px;color:#fff}.container{background-color:beige;height:250px}.box-1{background-color:red}.box-2{background-color:blue}.box-3{background-color:green}.container{display:flex}.container div.box-2{align-self:flex-end}.container div.box-3{align-self:center}

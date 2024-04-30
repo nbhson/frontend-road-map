@@ -1,0 +1,17 @@
+@import '../../support.scss';
+
+.container {
+  display: flex;
+  
+  // priority: current position + order number
+
+  .box-3 {
+    order: 1;
+  }
+  .box-2 {
+    order: 1;
+  }
+  .box-1 {
+    order: 2;
+  }
+}

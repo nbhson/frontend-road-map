@@ -1,0 +1,36 @@
+// Support
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    color: white;
+    @extend .flexCenter;
+}
+
+.container {
+    background-color: beige;
+    height: 250px;
+
+    div {
+        @extend .box;
+
+        @at-root {
+            .box-1 {
+                background-color: red;
+            }
+
+            .box-2 {
+                background-color: blue;
+            }
+
+            .box-3 {
+                background-color: green;
+            }
+        }
+    }
+}

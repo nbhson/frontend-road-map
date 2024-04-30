@@ -1,0 +1,14 @@
+@import '../../support.scss';
+
+.container {
+  display: flex;
+
+  div.box-2 {
+    align-self: flex-end;
+  }
+
+  div.box-3 {
+    align-self: center;
+  }
+}
+

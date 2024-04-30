@@ -1,0 +1,14 @@
+@import '../../support.scss';
+
+.container {
+  height: 300px;
+  flex-wrap: wrap; // required
+  display: flex;
+  align-content: flex-start;
+  align-content: flex-end;
+  align-content: center;
+  align-content: space-between;
+  align-content: space-around;
+  align-content: space-evenly;
+}
+
