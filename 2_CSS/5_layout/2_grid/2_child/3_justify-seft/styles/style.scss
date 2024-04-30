@@ -1,0 +1,14 @@
+@import '../../../support.scss';
+
+.container {
+  display: grid;
+  grid: [row1-start] "header header header" 1fr [row1-end]
+        [row2-start] "main main main" 75px [row2-end]
+        [row3-start] "main main main" 75px [row3-end]
+        [row4-start] "footer footer footer" 75px [row4-end]
+        / auto 50px auto;
+}
+
+.item-a {
+  justify-self: end;
+}
