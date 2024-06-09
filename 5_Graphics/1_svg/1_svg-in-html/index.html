@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+        Start with the <svg> root element
+        The width and height of the SVG image is defined with the width and height attributes
+        Since SVG is an XML dialect, always bind the namespace correctly with the xmlns attribute
+        The namespace "http://www.w3.org/2000/svg" identifies SVG elements inside an HTML document
+        The <circle> element is used to draw a circle
+        The cx and cy attributes define the x and y coordinates of the center of the circle. If omitted, the circle's center is set to (0, 0)
+        The r attribute defines the radius of the circle
+        The stroke and stroke-width attributes control how the outline of a shape appears. We set the outline of the circle to a 4px green "border"
+        The fill attribute refers to the color inside the circle. We set the fill color to yellow
+        The closing </svg> tag closes the SVG image
+     -->
+
+    <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+     </svg> 
+
+    <!-- 
+        Start with the <svg> root element, define the width and height, and proper namespace
+        The <rect> element is used to draw a rectangle
+        The width and height of the rectangle is set to 100% of the width/height of the <svg> element
+        Set the fill color of the rectangle to green
+        The <circle> element is used to draw a circle
+        The cx and cy attributes define the x and y coordinates of the center of the circle
+        The r attribute defines the radius of the circle
+        We set the fill color of the circle to yellow
+        The <text> element is used to draw a text
+        The x and y attributes define the x and y coordinates of the center of the text
+        The font-size attribute defines the font size of the text
+        The text-anchor attribute defines where we want the midpoint (of the text) to be
+        The fill attribute defines the color of the text
+        Write "SVG" as the text to show
+        Close the SVG image with </svg>
+      -->
+
+    <svg width="150" height="100" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100%" height="100%" fill="green" />
+        <circle cx="75" cy="50" r="40" fill="yellow" />
+        <text x="75" y="60" font-size="30" text-anchor="middle" fill="red">SVG</text>
+    </svg>
+      
+</body>
+</html>
