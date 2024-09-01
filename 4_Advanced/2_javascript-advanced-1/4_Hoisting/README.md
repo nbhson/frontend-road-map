@@ -1,5 +1,9 @@
 # Hoisting
 
+## Temporal Dead Zone (TDZ)
+
+Trong JavaScript, khi một biến được khai báo bằng `let` hoặc `const`, biến đó sẽ tồn tại trong phạm vi của block mà nó được khai báo. Tuy nhiên, trước khi biến đó được khai báo, chúng sẽ rơi vào ``Temporal Dead Zone (TDZ)``, nghĩa là không thể truy cập hoặc sử dụng biến đó trước khi nó được khai báo. Khi bạn cố gắng truy cập biến trong TDZ, JavaScript sẽ ném một lỗi ReferenceError. Điều này giúp tránh các lỗi logic do sử dụng biến trước khi nó được khai báo đúng cách.
+
 ## Hoisting với var
 
 ```js

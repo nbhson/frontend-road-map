@@ -182,3 +182,5 @@ const personProxy = new Proxy(person, {
   },
 });
 ```
+
+<https://dev.to/devishraq/understanding-javascript-proxies-harnessing-the-power-of-metaprogramming-1l4d>
