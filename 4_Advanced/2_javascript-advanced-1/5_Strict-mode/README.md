@@ -1,10 +1,80 @@
 # Strict mode
 
+> In JavaScript, the strict mode is introduced in the `ES5 (ECMAScript 2009)`. The purpose behind introducing the "strict mode" is to make the JavaScript code more secure.
+
 - Nhằm cải thiện một vài hạn chế trong các phiên bản trước đó
 - Tránh quên từ khóa khai báo biến
 - Sử dụng bộ nhớ hiệu quả vì tránh tạo biến global
 
 ## Case sử dụng
+
+### You can't initialize the variable with a value without declaring it.
+```js
+"use strict";
+  let y = 50; // This is valid
+  document.write("The value of the X is: " + y);
+
+  x = 100; // This is not valid
+  document.write("The value of the X is: " + x);
+
+  numObj = {a: 89, b: 10.23}; // This is invalid
+
+```
+
+### You can't delete objects / object prototype using the delete keyword.
+
+```js
+'use strict';
+
+let women = { name: "Aasha", age: 29 };
+delete women; // This is invalid
+delete women.prototype; // This is invalid
+```
+
+### Deleting the function using the delete operator is not allowed.
+
+```js
+'use strict';
+function func() { }
+delete func; // This is invalid
+```
+
+### You can't assign octal numbers to variables.
+
+```js
+'use strict';
+let octal = 010; // Throws an error
+```
+
+### You can't use reserved keywords like eval, arguments, public, etc., as an identifier.
+
+```js
+'use strict';
+let public = 100; // Throws an error
+```
+
+### In the strict mode, when you use the 'this' keyword inside the function, it refers to the reference object through which the function is invoked. If the reference object is not specified, it refers to the undefined value.
+
+```js
+'use strict';
+function test() {
+  console.log(this); // Undefined
+}
+test();
+```
+
+### Strict Mode in the Local Scope
+
+```js
+ x = 100; // This is valid
+document.write("The value of the X is - " + x);
+function test() {
+    "use strict";
+    y = 50; // This is not valid
+    document.write("The value of the y is: " + x);
+}
+test();
+```
 
 ### Báo lỗi khi hàm có tham số trùng tên 
 ```js
